@@ -1,6 +1,8 @@
-Online Retail Dataset II audit
+Online Retail Dataset II audit:
+Clean data from NULL & missing values, and invalid orders. Perform aggregations on cleaned data to prepare for analysis
 
-#Data cleaning steps
+Data cleaning steps
+
 I used pandas in Python to clean the dataset and to test it for customer revenue.
 
 I used isnull() to identify missing and null values in the dataset. 
@@ -11,7 +13,7 @@ I then dropped all rows with null values to perform accurate aggregations with t
 
 Next, I dropped all orders with a quantity less than 0, or in other words, invalid, thus dropping all cancelled and invalid orders so the dataset is ready to work with.
 
-#Analysis
+Analysis
 I create a revenue column by multiplying 'Price' and 'Quantity' columns.
 
 I group the customers by total revenue and sort descending to find the top customers in terms of revenue.
